@@ -74,7 +74,7 @@ public class MainPage extends javax.swing.JFrame {
   }
 
 
-  public static String convert(long number) {
+  public static String convertNumber(long number) {
     // 0 to 999 999 999 999
     if (number == 0) { return "Zero"; }
 
@@ -232,7 +232,7 @@ public class MainPage extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         int number = Integer.parseInt(t1.getText());
-        String numberString = MainPage.convert(number);
+        String numberString = MainPage.convertNumber(number);
         ta1.setText(numberString);
     }//GEN-LAST:event_jButton1ActionPerformed
 
